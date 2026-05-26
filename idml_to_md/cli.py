@@ -56,9 +56,17 @@ def convert(
         dir_okay=False,
         help="Caminho do inkscape.exe (override de PATH e IDML2MD_INKSCAPE_PATH).",
     ),
+    pdf: Path | None = typer.Option(
+        None,
+        "--pdf",
+        exists=True,
+        dir_okay=False,
+        readable=True,
+        help='PDF do miolo. Default: primeiro ".pdf" irmão do .idml.',
+    ),
     verbose: bool = typer.Option(False, "--verbose", "-v"),
 ) -> None:
-    """Converte um IDML para um único arquivo Markdown."""
+    """Converte um IDML + PDF em 16 arquivos Markdown (4 unidades × 4 capítulos)."""
     _setup_logging(verbose)
     result = convert_idml(
         idml_path=idml_path,
@@ -67,9 +75,11 @@ def convert(
         book_title=title,
         links_dir=links,
         inkscape_path=inkscape,
+        pdf_path=pdf,
     )
-    console.print(f"[green]OK[/] {result.markdown_path}")
+    console.print(f"[green]OK[/] {len(result.markdown_paths)} arquivos em {result.output_dir}")
     console.print(f"[dim]report:[/] {result.report_path}")
+    console.print(f"[dim]pdf offset:[/] {result.pdf_offset}")
     if result.report.unmapped_paragraph_styles:
         n = len(result.report.unmapped_paragraph_styles)
         console.print(f"[yellow]Aviso:[/] {n} ParagraphStyles não mapeados (ver report)")

@@ -1,12 +1,12 @@
-"""Fila de conversão IDML → Markdown em paralelo.
+"""Fila de conversão IDML → 16 arquivos Markdown em paralelo.
 
 Orquestra a conversão de múltiplos livros descobertos em uma pasta ``Input/``:
 
-- Cada subpasta de ``Input/`` deve conter um arquivo ``.idml`` (e a pasta
-  ``Links/`` irmã exigida pelo pipeline).
-- Em sucesso, o livro vai para ``FEITOS/<book>/`` e o output é achatado em
-  ``Output/<slug>.md`` + ``Output/<slug>_assets/`` (com caminhos reescritos no
-  Markdown).
+- Cada subpasta de ``Input/`` deve conter um arquivo ``.idml`` + o PDF do
+  miolo (irmão direto) + a pasta ``Links/`` com assets vinculados.
+- Em sucesso, o livro vai para ``FEITOS/<book>/`` e o output fica em
+  ``Output/<slug>/unidade_<N>/capitulo_<M>.md`` (16 arquivos por livro) +
+  ``Output/<slug>/assets/`` compartilhado.
 - Em falha, o livro vai para ``ERROS/<book>/`` com ``_batch_error.json``
   contendo o traceback completo.
 - Livros cujo destino já existe (em ``Output``, ``FEITOS`` ou ``ERROS``) são
@@ -19,7 +19,6 @@ API principal: :func:`run_batch`. Pensado para ser invocado pelo subcomando
 from __future__ import annotations
 
 import json
-import re
 import shutil
 import sys
 import traceback
@@ -116,18 +115,19 @@ def filter_already_done(
     """Separa tasks novas dos livros já processados.
 
     Um livro é considerado "já feito" se qualquer um destes existir:
-    - ``output_dir/<slug>.md``
+    - ``output_dir/<slug>/unidade_1/capitulo_1.md`` (qualquer dos 16 arquivos
+      finais — usamos o primeiro como sentinela)
     - ``done_dir/<book_dir.name>/``
     - ``errors_dir/<book_dir.name>/``
     """
     pending: list[BatchTask] = []
     skipped: list[BatchResult] = []
     for task in tasks:
-        md_target = output_dir / f"{task.slug}.md"
+        md_target = output_dir / task.slug / "unidade_1" / "capitulo_1.md"
         done_target = done_dir / task.book_dir.name
         error_target = errors_dir / task.book_dir.name
         if md_target.exists():
-            reason = f"Output/{task.slug}.md já existe"
+            reason = f"Output/{task.slug}/ já existe"
         elif done_target.exists():
             reason = f"FEITOS/{task.book_dir.name}/ já existe"
         elif error_target.exists():
@@ -145,33 +145,6 @@ def filter_already_done(
             )
         )
     return pending, skipped
-
-
-# ---------------------------------------------------------------------------
-# Reescrita de caminhos de asset no Markdown
-# ---------------------------------------------------------------------------
-
-_MD_LINK_ASSETS = re.compile(r"\]\(assets/")
-_HTML_SRC_ASSETS = re.compile(r"""src=(['"])assets/""")
-_REF_LINK_ASSETS = re.compile(r"^(\[[^\]]+\]):\s*assets/", flags=re.MULTILINE)
-
-
-def _rewrite_asset_paths(md_text: str, slug: str) -> str:
-    """Reescreve refs ``assets/...`` para ``<slug>_assets/...``.
-
-    Cobre os três pontos onde o pipeline emite caminhos de asset:
-    - Imagens Markdown: ``](assets/img/foo.jpg)`` → ``](<slug>_assets/img/...)``
-    - HTML em tabelas: ``src="assets/eqs/x.png"`` → ``src="<slug>_assets/...`` (idem com aspas simples)
-    - Links de referência: ``[ref]: assets/...`` → ``[ref]: <slug>_assets/...``
-
-    Não toca em ocorrências literais de ``assets/`` no corpo do texto (em
-    parágrafos comuns), porque os padrões acima são ancorados.
-    """
-    prefix = f"{slug}_assets/"
-    out = _MD_LINK_ASSETS.sub(f"]({prefix}", md_text)
-    out = _HTML_SRC_ASSETS.sub(rf"src=\1{prefix}", out)
-    out = _REF_LINK_ASSETS.sub(rf"\1: {prefix}", out)
-    return out
 
 
 # ---------------------------------------------------------------------------
@@ -199,50 +172,31 @@ def _convert_one(
 ) -> BatchResult:
     """Função executada no ProcessPool: converte um único livro.
 
-    Roda ``convert_idml`` em uma pasta temporária dentro de ``output_dir``,
-    depois reorganiza os artefatos finais:
-    - ``output_dir/<slug>.md`` (com caminhos reescritos)
-    - ``output_dir/<slug>_assets/`` (imagens + vetores + equações)
-
-    O ``_report.json`` é preservado dentro da pasta temporária e seu caminho é
-    devolvido para o orquestrador depositá-lo em ``FEITOS/<book>/_report.json``.
+    O pipeline novo já escreve direto em ``output_dir/<slug>/`` com a estrutura
+    final ``unidade_<N>/capitulo_<M>.md`` + ``assets/``. O worker só precisa
+    chamar o pipeline e mover o ``_report.json`` para ``FEITOS/<book>/`` no
+    final.
 
     Em qualquer exceção, retorna ``BatchResult(status="error", ...)`` com o
     traceback completo — não levanta para fora do worker.
     """
     _setup_worker_logging()
-    tmp_root = output_dir / ".tmp" / slug
     try:
-        if tmp_root.exists():
-            shutil.rmtree(tmp_root)
-        tmp_root.mkdir(parents=True, exist_ok=True)
-
         result = convert_idml(
             idml_path=idml_path,
-            output_dir=tmp_root,
+            output_dir=output_dir,
             overlay_path=overlay_path,
             inkscape_path=inkscape_path,
         )
 
-        md_text = result.markdown_path.read_text(encoding="utf-8")
-        md_rewritten = _rewrite_asset_paths(md_text, slug)
-        final_md = output_dir / f"{slug}.md"
-        final_md.write_text(md_rewritten, encoding="utf-8")
-
-        assets_src = result.output_dir / "assets"
-        assets_dst = output_dir / f"{slug}_assets"
-        if assets_src.exists():
-            if assets_dst.exists():
-                shutil.rmtree(assets_dst)
-            shutil.move(str(assets_src), str(assets_dst))
-
-        report_keep = output_dir / ".tmp" / f"{slug}_report.json"
+        # O report fica dentro da pasta do livro; vamos copiar para uma área
+        # temporária acessível ao orquestrador (para mover para FEITOS depois
+        # de a pasta-fonte ser movida).
+        report_keep: Path | None = None
         if result.report_path.exists():
-            shutil.move(str(result.report_path), str(report_keep))
-        else:
-            report_keep = None  # type: ignore[assignment]
-
-        shutil.rmtree(tmp_root, ignore_errors=True)
+            report_keep = output_dir / ".tmp" / f"{slug}_report.json"
+            report_keep.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(str(result.report_path), str(report_keep))
 
         return BatchResult(
             book_name=book_dir.name,
@@ -253,7 +207,10 @@ def _convert_one(
     except Exception as exc:  # capturamos tudo de propósito (worker boundary)
         tb = traceback.format_exc()
         logger.error("Falha convertendo '{}': {}", book_dir.name, exc)
-        shutil.rmtree(tmp_root, ignore_errors=True)
+        # Limpa output parcial — não queremos meio-livro em Output/.
+        partial_out = output_dir / slug
+        if partial_out.exists():
+            shutil.rmtree(partial_out, ignore_errors=True)
         return BatchResult(
             book_name=book_dir.name,
             slug=slug,

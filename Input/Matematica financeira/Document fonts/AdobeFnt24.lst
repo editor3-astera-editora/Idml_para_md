@@ -1,0 +1,623 @@
+%!Adobe-FontList 1.24
+%Locale:0x416
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminPro-Bold
+FamilyName:Acumin Pro
+StyleName:Bold
+FullName:Acumin Pro Bold
+MenuName:Acumin Pro
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\Acumin Pro Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:149744
+FileModTime:1753131311
+WeightClass:700
+WidthClass:5
+AngleClass:0
+DesignSize:100
+NameArray:0,Mac,18,Acumin Pro Bold
+NameArray:0,Mac,4,Acumin Pro Bold
+NameArray:0,Win,1,Acumin Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminPro-Light
+FamilyName:Acumin Pro
+StyleName:Light
+FullName:Acumin Pro Light
+MenuName:Acumin Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\Acumin Pro Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:147852
+FileModTime:1753131311
+WeightClass:300
+WidthClass:5
+AngleClass:0
+DesignSize:100
+NameArray:0,Mac,18,Acumin Pro Light
+NameArray:0,Mac,4,Acumin Pro Light
+NameArray:0,Win,1,Acumin Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminVariableConcept
+FamilyName:Acumin Variable Concept
+StyleName:Default
+FullName:Acumin Variable Concept Default
+MenuName:Acumin Variable Concept
+FamilyPrefix:AcuminConcept
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\AcuminVariableConcept.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:CFF2VariableFont
+FileLength:1029036
+FileModTime:1753131311
+WeightClass:275
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Acumin Variable Concept
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Almaq-Refined
+FamilyName:Almaq
+StyleName:Refined
+FullName:Almaq Refined
+MenuName:Almaq Refined
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\Almaq Refined.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:106944
+FileModTime:1753131312
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Almaq Refined
+NameArray:0,Mac,4,Almaq Refined
+NameArray:0,Win,1,Almaq Refined
+NameArray:0,Win,16,Almaq
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-LightCond
+FamilyName:Myriad Pro
+StyleName:Light Condensed
+FullName:Myriad Pro Light Condensed
+MenuName:Myriad Pro Light Cond
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\MYRIADPRO-LIGHTCOND.OTF
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:88744
+FileModTime:1753131313
+WeightClass:300
+WidthClass:3
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,18,Myriad Pro Light Cond
+NameArray:0,Mac,4,Myriad Pro Light Condensed
+NameArray:0,Win,1,Myriad Pro Light Cond
+NameArray:0,Win,16,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-BoldCond
+FamilyName:Myriad Pro
+StyleName:Bold Condensed
+FullName:Myriad Pro Bold Condensed
+MenuName:Myriad Pro Cond
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\MyriadPro-BoldCond.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:101012
+FileModTime:1753131313
+WeightClass:700
+WidthClass:3
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,18,Myriad Pro Bold Cond
+NameArray:0,Mac,4,Myriad Pro Bold Condensed
+NameArray:0,Win,1,Myriad Pro Cond
+NameArray:0,Win,16,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Light
+FamilyName:Myriad Pro
+StyleName:Light
+FullName:Myriad Pro Light
+MenuName:Myriad Pro Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\MyriadPro-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:94260
+FileModTime:1753131313
+WeightClass:300
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Myriad Pro Light
+NameArray:0,Win,1,Myriad Pro Light
+NameArray:0,Win,16,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Regular
+FamilyName:Myriad Pro
+StyleName:Regular
+FullName:Myriad Pro
+MenuName:Myriad Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\MyriadPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:94360
+FileModTime:1753131313
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Myriad Pro
+NameArray:0,Win,1,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Semibold
+FamilyName:Myriad Pro
+StyleName:Semibold
+FullName:Myriad Pro Semibold
+MenuName:Myriad Pro Light
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\MyriadPro-Semibold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:103564
+FileModTime:1753131313
+WeightClass:600
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Myriad Pro Semibold
+NameArray:0,Win,1,Myriad Pro Light
+NameArray:0,Win,16,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Light
+FamilyName:Raleway
+StyleName:Light
+FullName:Raleway Light
+MenuName:Raleway Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\Raleway-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:176904
+FileModTime:1753131313
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Raleway Light
+NameArray:0,Win,16,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Vision-Light
+FamilyName:Vision
+StyleName:Light
+FullName:Vision Light
+MenuName:Vision Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\Vision-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:113332
+FileModTime:1753131314
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Vision Light
+NameArray:0,Win,1,Vision Light
+NameArray:0,Win,16,Vision
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Vision-Regular
+FamilyName:Vision
+StyleName:Regular
+FullName:Vision Regular
+MenuName:Vision
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\Vision.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:111928
+FileModTime:1753131314
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Vision Regular
+NameArray:0,Win,1,Vision
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Whitney-Bold
+FamilyName:Whitney
+StyleName:Bold
+FullName:Whitney-Bold
+MenuName:Whitney
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\Whitney-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27644
+FileModTime:1753131314
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Whitney-Bold
+NameArray:0,Win,1,Whitney
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri
+FamilyName:Calibri
+StyleName:Regular
+FullName:Calibri
+MenuName:Calibri
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\calibri.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1681220
+FileModTime:1753131312
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Calibri
+NameArray:0,Win,1,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-Italic
+FamilyName:Calibri
+StyleName:Italic
+FullName:Calibri Italic
+MenuName:Calibri
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\calibrii.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1228564
+FileModTime:1753131312
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Calibri Italic
+NameArray:0,Win,1,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-Light
+FamilyName:Calibri
+StyleName:Light
+FullName:Calibri Light
+MenuName:Calibri Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\calibril.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1471248
+FileModTime:1753131312
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Calibri Light
+NameArray:0,Mac,4,Calibri Light
+NameArray:0,Win,1,Calibri Light
+NameArray:0,Win,16,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-LightItalic
+FamilyName:Calibri
+StyleName:Light Italic
+FullName:Calibri Light Italic
+MenuName:Calibri Light
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\calibrili.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1092612
+FileModTime:1753131312
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,Calibri Light Italic
+NameArray:0,Mac,4,Calibri Light Italic
+NameArray:0,Win,1,Calibri Light
+NameArray:0,Win,16,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Cambria-Italic
+FamilyName:Cambria
+StyleName:Italic
+FullName:Cambria Italic
+MenuName:Cambria
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\cambriai.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:892620
+FileModTime:1753131313
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Cambria Italic
+NameArray:0,Win,1,Cambria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ComicSansMS
+FamilyName:Comic Sans MS
+StyleName:Regular
+FullName:Comic Sans MS
+MenuName:Comic Sans MS
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\comic.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:272612
+FileModTime:1753131313
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Comic Sans MS
+NameArray:0,Win,1,Comic Sans MS
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ComicSansMS-Bold
+FamilyName:Comic Sans MS
+StyleName:Bold
+FullName:Comic Sans MS Bold
+MenuName:Comic Sans MS
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\comicbd.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:255972
+FileModTime:1753131313
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Comic Sans MS Bold
+NameArray:0,Win,1,Comic Sans MS
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:CourierNewPS-BoldMT
+FamilyName:Courier New
+StyleName:Bold
+FullName:Courier New Bold
+MenuName:Courier New
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\courbd.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:805244
+FileModTime:1753131313
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Courier New Bold
+NameArray:0,Win,1,Courier New
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MT-Extra
+FamilyName:MT Extra
+StyleName:Regular
+FullName:MT Extra
+MenuName:MT Extra
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\mtextra.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27092
+FileModTime:1753131313
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,MT Extra
+NameArray:0,Win,1,MT Extra
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SymbolMT
+FamilyName:Symbol
+StyleName:Regular
+FullName:Symbol
+MenuName:Symbol
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\symbol.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:69036
+FileModTime:1753131314
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Symbol
+NameArray:0,Win,1,Symbol
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TimesNewRomanPSMT
+FamilyName:Times New Roman
+StyleName:Regular
+FullName:Times New Roman
+MenuName:Times New Roman
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\01 - Inovatech\FICs\81. MATEMÁTICA FINANCEIRA\_Diagramáveis_proj_atual\MIOLO\Document fonts\times.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1195688
+FileModTime:1753131314
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Times New Roman
+NameArray:0,Win,1,Times New Roman
+%EndFont
+

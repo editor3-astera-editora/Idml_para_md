@@ -1,0 +1,412 @@
+%!Adobe-FontList 1.24
+%Locale:0x416
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminPro-Bold
+FamilyName:Acumin Pro
+StyleName:Bold
+FullName:Acumin Pro Bold
+MenuName:Acumin Pro
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Acumin Pro Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:149744
+FileModTime:1459843012
+WeightClass:700
+WidthClass:5
+AngleClass:0
+DesignSize:100
+NameArray:0,Mac,18,Acumin Pro Bold
+NameArray:0,Mac,4,Acumin Pro Bold
+NameArray:0,Win,1,Acumin Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminPro-Italic
+FamilyName:Acumin Pro
+StyleName:Italic
+FullName:Acumin Pro Italic
+MenuName:Acumin Pro
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Acumin Pro Book Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:149856
+FileModTime:1459843078
+WeightClass:400
+WidthClass:5
+AngleClass:1
+DesignSize:100
+NameArray:0,Mac,18,Acumin Pro Italic
+NameArray:0,Mac,4,Acumin Pro Italic
+NameArray:0,Win,1,Acumin Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminPro-LightItalic
+FamilyName:Acumin Pro
+StyleName:Light Italic
+FullName:Acumin Pro Light Italic
+MenuName:Acumin Pro
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Acumin Pro Light Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:149448
+FileModTime:1459842184
+WeightClass:300
+WidthClass:5
+AngleClass:1
+DesignSize:100
+NameArray:0,Mac,18,Acumin Pro Light Italic
+NameArray:0,Mac,4,Acumin Pro Light Italic
+NameArray:0,Win,1,Acumin Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminPro-Light
+FamilyName:Acumin Pro
+StyleName:Light
+FullName:Acumin Pro Light
+MenuName:Acumin Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Acumin Pro Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:147852
+FileModTime:1459842174
+WeightClass:300
+WidthClass:5
+AngleClass:0
+DesignSize:100
+NameArray:0,Mac,18,Acumin Pro Light
+NameArray:0,Mac,4,Acumin Pro Light
+NameArray:0,Win,1,Acumin Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminVariableConcept
+FamilyName:Acumin Variable Concept
+StyleName:Default
+FullName:Acumin Variable Concept Default
+MenuName:Acumin Variable Concept
+FamilyPrefix:AcuminConcept
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\AcuminVariableConcept.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:CFF2VariableFont
+FileLength:1029036
+FileModTime:1704680512
+WeightClass:275
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Acumin Variable Concept
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:OpenSans
+FamilyName:Open Sans
+StyleName:Regular
+FullName:Open Sans
+MenuName:Open Sans
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\OpenSans-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:217360
+FileModTime:1305207890
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Open Sans
+NameArray:0,Win,1,Open Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Bold
+FamilyName:Raleway
+StyleName:Bold
+FullName:Raleway Bold
+MenuName:Raleway
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Raleway-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:173756
+FileModTime:1700581380
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Italic
+FamilyName:Raleway
+StyleName:Italic
+FullName:Raleway Italic
+MenuName:Raleway
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Raleway-Italic.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:161320
+FileModTime:1693145246
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Light
+FamilyName:Raleway
+StyleName:Light
+FullName:Raleway Light
+MenuName:Raleway Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Raleway-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:176904
+FileModTime:1700581380
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Raleway Light
+NameArray:0,Win,16,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Regular
+FamilyName:Raleway
+StyleName:Regular
+FullName:Raleway Regular
+MenuName:Raleway
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Raleway-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:163388
+FileModTime:1693145246
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Vision-Light
+FamilyName:Vision
+StyleName:Light
+FullName:Vision Light
+MenuName:Vision Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Vision-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:113332
+FileModTime:1694647802
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Vision Light
+NameArray:0,Win,1,Vision Light
+NameArray:0,Win,16,Vision
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Vision-LightItalic
+FamilyName:Vision
+StyleName:Light Italic
+FullName:Vision Light Italic
+MenuName:Vision Light
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Vision-LightItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:86248
+FileModTime:1486811420
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Vision Light Italic
+NameArray:0,Win,1,Vision Light
+NameArray:0,Win,16,Vision
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Vision-Regular
+FamilyName:Vision
+StyleName:Regular
+FullName:Vision Regular
+MenuName:Vision
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\Vision.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:111928
+FileModTime:1694647802
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Vision Regular
+NameArray:0,Win,1,Vision
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-BoldMT
+FamilyName:Arial
+StyleName:Bold
+FullName:Arial Bold
+MenuName:Arial
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\arialbd.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:991572
+FileModTime:1711956159
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial Bold
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-Light
+FamilyName:Calibri
+StyleName:Light
+FullName:Calibri Light
+MenuName:Calibri Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\calibril.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1471248
+FileModTime:1711956163
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Calibri Light
+NameArray:0,Mac,4,Calibri Light
+NameArray:0,Win,1,Calibri Light
+NameArray:0,Win,16,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SymbolMT
+FamilyName:Symbol
+StyleName:Regular
+FullName:Symbol
+MenuName:Symbol
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:\\172.18.4.5\rds 2\07_Inovatech 2025\114. GESTÃO DA PRODUÇÃO\00. LV_Teoria\_Diagramáveis\Pasta 114. GESTÃO DA PRODUÇÃO\Document fonts\symbol.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:69036
+FileModTime:1711956129
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Symbol
+NameArray:0,Win,1,Symbol
+%EndFont
+

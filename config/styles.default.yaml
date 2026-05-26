@@ -24,6 +24,14 @@ paragraph_styles:
   "Títulos:T4":                  { kind: heading, level: 4 }
   "TÍTULO UNIDADE":              { kind: heading, level: 1, role: unit_title, starts_chapter: true }
   "INTRODUÇÃO/OBJETIVOS/REFERÊNCIAS": { kind: heading, level: 1, starts_chapter: true }
+  # --- Variantes da coleção Letter V / outros templates (sem o prefixo "Títulos:") ---
+  "T1":                          { kind: heading, level: 1, starts_chapter: true }
+  "T2":                          { kind: heading, level: 2 }
+  "T3":                          { kind: heading, level: 3 }
+  "T4":                          { kind: heading, level: 4 }
+  "Titulo do capítulo dir":      { kind: heading, level: 1, starts_chapter: true }
+  "Titulo de capítulo":          { kind: heading, level: 1, starts_chapter: true }
+  "Título de tematicas":         { kind: heading, level: 2 }
 
   # --- Texto corrente ---
   "Texto principal":             { kind: paragraph }

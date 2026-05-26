@@ -43,6 +43,12 @@ class ConversionReport:
     equation_cache_misses: int = 0
     vector_converted: list[str] = field(default_factory=list)
     vector_failed: list[str] = field(default_factory=list)
+    # Campos do split em 4 unidades × 4 capítulos
+    units_emitted: int = 0
+    chapters_emitted_per_unit: list[int] = field(default_factory=list)
+    manifest_chapter_titles: list[str] = field(default_factory=list)
+    pdf_offset_detected: int | None = None
+    anchors_matched: int = 0
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -79,6 +85,11 @@ def build_report(
     equation_cache_misses: int = 0,
     vector_converted: list[str] | None = None,
     vector_failed: list[str] | None = None,
+    units_emitted: int = 0,
+    chapters_emitted_per_unit: list[int] | None = None,
+    manifest_chapter_titles: list[str] | None = None,
+    pdf_offset_detected: int | None = None,
+    anchors_matched: int = 0,
 ) -> ConversionReport:
     """Monta um ``ConversionReport`` a partir das peças do pipeline."""
     return ConversionReport(
@@ -100,4 +111,9 @@ def build_report(
         equation_cache_misses=equation_cache_misses,
         vector_converted=list(vector_converted or []),
         vector_failed=list(vector_failed or []),
+        units_emitted=units_emitted,
+        chapters_emitted_per_unit=list(chapters_emitted_per_unit or []),
+        manifest_chapter_titles=list(manifest_chapter_titles or []),
+        pdf_offset_detected=pdf_offset_detected,
+        anchors_matched=anchors_matched,
     )

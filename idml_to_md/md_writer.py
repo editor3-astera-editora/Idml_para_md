@@ -55,27 +55,36 @@ from idml_to_md.table_renderer import render_table
 from idml_to_md.toc_builder import build_toc, render_toc
 
 
-def render_document(doc: Document) -> str:
-    """Serializa o documento como string Markdown completa."""
+def render_document(doc: Document, include_toc: bool = False) -> str:
+    """Serializa o documento como string Markdown completa.
+
+    Por default NÃO inclui o TOC global nem o título do livro. O pipeline novo
+    particiona o documento em 16 capítulos via ``book_splitter`` e o TOC global
+    perderia sentido (cada capítulo é um arquivo independente).
+
+    ``include_toc=True`` preserva o comportamento legado (título + front matter +
+    TOC + corpo + referências) para uso em testes e em ferramentas externas.
+    """
     parts: list[str] = []
 
-    parts.append(f"# {doc.title}")
-    parts.append("")
-
-    fm_md = _render_front_matter(doc.front_matter)
-    if fm_md:
-        parts.append(fm_md)
+    if include_toc:
+        parts.append(f"# {doc.title}")
         parts.append("")
 
-    toc_md = render_toc(build_toc(doc))
-    if toc_md:
-        parts.append(toc_md)
+        fm_md = _render_front_matter(doc.front_matter)
+        if fm_md:
+            parts.append(fm_md)
+            parts.append("")
+
+        toc_md = render_toc(build_toc(doc))
+        if toc_md:
+            parts.append(toc_md)
 
     body_md = _render_blocks(doc.blocks)
     if body_md:
         parts.append(body_md)
 
-    if doc.references:
+    if include_toc and doc.references:
         parts.append("## Referências")
         parts.append("")
         for ref in doc.references:
@@ -83,6 +92,15 @@ def render_document(doc: Document) -> str:
             parts.append("")
 
     return _join_clean(parts)
+
+
+def render_chapter(blocks: list[Block]) -> str:
+    """Renderiza uma lista de blocos como Markdown puro (sem título/TOC).
+
+    Conveniência para callers que já têm uma lista de blocos particionada
+    (ex.: ``book_splitter``).
+    """
+    return _join_clean([_render_blocks(blocks)])
 
 
 # ---------------------------------------------------------------------------

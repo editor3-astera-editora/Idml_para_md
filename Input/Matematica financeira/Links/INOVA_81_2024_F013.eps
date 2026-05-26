@@ -1,0 +1,493 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: tzunghaor svg2eps
+%%Pages: 1
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 3
+%%DocumentNeededResources: procset Adobe_Illustrator_AI5 1.3 0
+%AI5_FileFormat 3
+%%BoundingBox: 0 0 3000 2250
+%%HiResBoundingBox: 0 0 3000.000000 2250.000000
+%AI5_ArtSize: 3000.000000 2250.000000
+%ADO_ContainsXMP: MainFirst
+%%EndComments
+
+%%BeginProlog
+100 dict begin
+/tzung_eps_state save def
+/dict_count countdictstack def
+/op_count count 1 sub def
+/Adobe_Illustrator_AI5 where
+{ pop } {
+    /tzung_strokergb [ 0 0 0 ] def
+    /tzung_compound 0 def
+    /tzung_closeop { S } def
+    /tzung_fillrule 0 def
+
+    /*u { /tzung_compound 1 def newpath /tzung_fillrule 0 def } bind def
+    /*U { /tzung_compound 0 def tzung_closeop  } bind def
+    /u {} bind def
+    /U {} bind def
+
+    /q { clipsave } bind def
+    /Q { cliprestore } bind def
+    /W { clip } bind def
+
+    /Lb { 10 {pop} repeat } bind def
+    /Ln {pop} bind def
+    /LB {} bind def
+
+
+    /w { setlinewidth } bind def
+    /J { setlinecap } bind def
+    /j { setlinejoin } bind def
+    /M { setmiterlimit } bind def
+    /d { setdash } bind def
+
+    /m { tzung_compound 0 eq { newpath /tzung_fillrule 0 def } if moveto } bind def
+    /l { lineto } bind def
+    /c { curveto } bind def
+
+    /XR { /tzung_fillrule exch def } bind def
+    /Xa { setrgbcolor } bind def
+    /XA { 3 array astore /tzung_strokergb exch def } bind def
+
+
+    /F { tzung_compound 0 eq {
+             tzung_fillrule 0 eq { fill } { eofill } ifelse
+         } {
+             /tzung_closeop {F} def
+         } ifelse } bind def
+    /f { closepath F } bind def
+    /S { tzung_compound 0 eq {
+            tzung_strokergb aload pop setrgbcolor stroke
+        } {
+             /tzung_closeop {S} def
+        } ifelse } bind def
+    /s { closepath S } bind def
+
+    /B { tzung_compound 0 eq {
+            gsave
+            tzung_fillrule 0 eq { fill } { eofill } ifelse
+            grestore
+            tzung_strokergb aload pop setrgbcolor stroke
+         } {
+             /tzung_closeop {B} def
+        } ifelse } bind def
+    /b { closepath B } bind def
+    /H { tzung_compound 0 eq {
+        }{
+            /tzung_closeop {H} def
+        } ifelse} bind def
+    /h { closepath } bind def
+    /N { tzung_compound 0 eq {
+        }{
+            /tzung_closeop {N} def
+        } ifelse} bind def
+    /n { closepath N } bind def
+
+
+    /Bn { /dict_gradients exch dict def} bind def
+    /Bd { /tmp_ngradstop exch def /tmp_shadingtype exch def } bind def  %leaves gradient name in stack
+    /BD { ]  % this handles only stops that have CMYKRGB color definitions
+        % linear gradient stops must be in reverse order, radials in normal order
+        aload
+        pop
+        /tmp_boundaries tmp_ngradstop array def
+        /tmp_colors tmp_ngradstop array def
+        tmp_shadingtype 0 eq {
+            0 1 tmp_ngradstop 1 sub   % for i=0; i<= number of gradient stops - 1; i++
+        } {
+            tmp_ngradstop 1 sub -1 0   % for i=number of gradient stops - 1; i >= 0; i++
+        } ifelse
+        {
+            /loopvar exch def
+            100 div
+            tmp_boundaries  loopvar
+            3 -1 roll put    %  obj array i => array i obj
+            pop % assume gradient middle is always 50
+            pop % assume color type is always 2 (CMYKRGB)
+            3 array astore
+            tmp_colors loopvar
+            3 -1 roll put
+            pop pop pop pop % drop CMYK values
+        } for
+
+        tmp_ngradstop 2 eq {
+            /tmp_function 5 dict def
+            tmp_boundaries 0 get tmp_boundaries 1 get 2 array astore
+            tmp_function /Domain 3 -1 roll put
+            tmp_function /FunctionType 2 put
+            tmp_function /C0  tmp_colors 0 get put
+            tmp_function /C1 tmp_colors 1 get put
+            tmp_function /N 1 put
+
+        } {
+            /tmp_functions tmp_ngradstop 1 sub array def
+
+            0 1 tmp_ngradstop 2 sub {
+                /loopvar exch def
+                /tmp_function 5 dict def
+                tmp_function /Domain [0 1]  put
+                tmp_function /FunctionType 2 put
+                tmp_function /C0  tmp_colors loopvar get put
+                tmp_function /C1 tmp_colors loopvar 1 add get put
+                tmp_function /N 1 put
+                tmp_functions loopvar tmp_function put
+            } for
+
+
+            /tmp_function 5 dict def
+            tmp_boundaries 0 get tmp_boundaries tmp_ngradstop 1 sub get 2 array astore
+            tmp_function /Domain 3 -1 roll  put
+            tmp_function /FunctionType 3 put
+            tmp_boundaries aload pop
+            tmp_ngradstop -1 roll pop pop % remove first and last bounds
+            tmp_ngradstop 2 sub array astore
+            tmp_function /Bounds 3 -1 roll put
+            tmp_function /Functions tmp_functions put
+
+            tmp_ngradstop 1 sub {
+                0 1
+            } repeat
+            tmp_ngradstop 1 sub 2 mul array astore
+            tmp_function /Encode 3 -1 roll put
+
+        } ifelse
+
+        /tmp_shading 6 dict def
+        tmp_shadingtype 0 eq {
+            tmp_shading /ShadingType 2 put
+            tmp_shading /Coords [ 0 0 1 0 ] put
+        } {
+            tmp_shading /ShadingType 3 put
+            tmp_shading /Coords [ 0 0 0 0 0 1 ] put
+        } ifelse
+        tmp_shading /ColorSpace /DeviceRGB put
+        tmp_shading /Domain [0 1] put
+        tmp_shading /Extend[ true true] put
+        tmp_shading /Function tmp_function put
+
+        /tmp_gradient 2 dict def
+        tmp_gradient /PatternType 2 put
+        tmp_gradient /Shading tmp_shading put
+
+        dict_gradients exch tmp_gradient put % gradient's name is on the top of the stack from Bd operator
+
+    } bind def
+    /Lb { 10 { pop } repeat } bind def
+    /Ln { pop } bind def
+    /Bb { } bind def
+
+    /Bg {
+        6 { pop } repeat
+        gsave
+        4 2 roll
+        translate
+        exch
+        rotate
+        dup scale
+         exch pop % remove Bg flag
+        dict_gradients exch get % now gradient name is on top of the stack
+         [ 1 0 0 1 0 0 ]
+        makepattern
+        /pattern_tmp exch def
+        grestore
+        pattern_tmp  setpattern
+         gsave % save for after pattern fil for possible stroke
+    } def
+    /BB { grestore 2 eq { s } if } bind def
+    /LB { } bind def
+
+} ifelse
+
+%%EndProlog
+
+%%BeginSetup
+/Adobe_Illustrator_AI5 where
+{
+    pop
+    Adobe_Illustrator_AI5 /initialize get exec
+} if
+
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox: 0 0 3000 2250
+
+/currentdistillerparams where
+{pop currentdistillerparams /CoreDistVersion get 5000 lt} {true} ifelse
+{userdict /EPSHandler1_pdfmark /cleartomark load put
+userdict /EPSHandler1_ReadMetadata_pdfmark {flushfile cleartomark} bind put}
+{ userdict /EPSHandler1_pdfmark /pdfmark load put
+userdict /EPSHandler1_ReadMetadata_pdfmark {/PUT pdfmark} bind put } ifelse
+[/NamespacePush EPSHandler1_pdfmark
+[/_objdef {eps_metadata_stream} /type /stream /OBJ EPSHandler1_pdfmark
+[{eps_metadata_stream} 2 dict begin
+/Type /Metadata def /Subtype /XML def currentdict end /PUT EPSHandler1_pdfmark
+[{eps_metadata_stream}
+currentfile 0 (% &&end EPS XMP packet marker&&)
+/SubFileDecode filter EPSHandler1_ReadMetadata_pdfmark
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.1-c002 79.2c0288b, 2024/01/23-06:33:24        ">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmp:CreatorTool="tzunghaor svg2eps"
+   xmp:MetadataDate="2024-08-02T14:09:07-03:00"
+   xmpRights:WebStatement="https://www.shutterstock.com/pt/image-vector/flat-design-down-graph-vector-illustration-2424041073"
+   photoshop:Credit="© NMWstock/Shutterstock"
+   xmpMM:InstanceID="xmp.iid:4eee9577-e308-774b-9fcf-2d3cf3612532"
+   xmpMM:DocumentID="xmp.did:4eee9577-e308-774b-9fcf-2d3cf3612532"
+   xmpMM:OriginalDocumentID="xmp.did:4eee9577-e308-774b-9fcf-2d3cf3612532">
+   <xmpMM:History>
+    <rdf:Seq>
+     <rdf:li
+      stEvt:action="saved"
+      stEvt:instanceID="xmp.iid:4eee9577-e308-774b-9fcf-2d3cf3612532"
+      stEvt:when="2024-08-02T14:09:07-03:00"
+      stEvt:softwareAgent="Adobe Bridge 2024"
+      stEvt:changed="/metadata"/>
+    </rdf:Seq>
+   </xmpMM:History>
+   <dc:title>
+    <rdf:Alt>
+     <rdf:li xml:lang="x-default">2424041073</rdf:li>
+    </rdf:Alt>
+   </dc:title>
+   <dc:description>
+    <rdf:Alt>
+     <rdf:li xml:lang="x-default">flat design up and down graph vector illustration&#xD;&#xA;</rdf:li>
+    </rdf:Alt>
+   </dc:description>
+   <dc:subject>
+    <rdf:Bag>
+     <rdf:li>icone</rdf:li>
+     <rdf:li>vetor</rdf:li>
+     <rdf:li>bussines</rdf:li>
+     <rdf:li>design</rdf:li>
+     <rdf:li>flecha</rdf:li>
+     <rdf:li>info gráfico</rdf:li>
+     <rdf:li>dinheiro</rdf:li>
+     <rdf:li>ilustração</rdf:li>
+     <rdf:li>marketing</rdf:li>
+     <rdf:li>alinhar</rdf:li>
+     <rdf:li>aresta</rdf:li>
+     <rdf:li>contorno</rdf:li>
+     <rdf:li>fila</rdf:li>
+     <rdf:li>file</rdf:li>
+     <rdf:li>fileira</rdf:li>
+     <rdf:li>fio</rdf:li>
+     <rdf:li>forrar</rdf:li>
+     <rdf:li>linha</rdf:li>
+     <rdf:li>reta</rdf:li>
+     <rdf:li>risco</rdf:li>
+     <rdf:li>segmento</rdf:li>
+     <rdf:li>traçar</rdf:li>
+     <rdf:li>traço</rdf:li>
+     <rdf:li>finança</rdf:li>
+     <rdf:li>dado</rdf:li>
+     <rdf:li>dados</rdf:li>
+     <rdf:li>sucess</rdf:li>
+     <rdf:li>gráfico</rdf:li>
+     <rdf:li>escarlate</rdf:li>
+     <rdf:li>rubente</rdf:li>
+     <rdf:li>rubicundo</rdf:li>
+     <rdf:li>rubra</rdf:li>
+     <rdf:li>rubro</rdf:li>
+     <rdf:li>rubícomo</rdf:li>
+     <rdf:li>rufo</rdf:li>
+     <rdf:li>ruge</rdf:li>
+     <rdf:li>rúbeo</rdf:li>
+     <rdf:li>rúbido</rdf:li>
+     <rdf:li>vermelha</rdf:li>
+     <rdf:li>vermelho</rdf:li>
+     <rdf:li>placa</rdf:li>
+     <rdf:li>apresentacao</rdf:li>
+     <rdf:li>grafo</rdf:li>
+     <rdf:li>monótono</rdf:li>
+     <rdf:li>plano</rdf:li>
+     <rdf:li>raso</rdf:li>
+     <rdf:li>investiment</rdf:li>
+     <rdf:li>banco</rdf:li>
+     <rdf:li>bancário</rdf:li>
+     <rdf:li>margem</rdf:li>
+     <rdf:li>acréscimo</rdf:li>
+     <rdf:li>crescimento</rdf:li>
+     <rdf:li>boteco</rdf:li>
+     <rdf:li>diagrama</rdf:li>
+     <rdf:li>financeira</rdf:li>
+     <rdf:li>moeda</rdf:li>
+     <rdf:li>moeda corrente</rdf:li>
+     <rdf:li>cheap econômico</rdf:li>
+     <rdf:li>science economia</rdf:li>
+     <rdf:li>mercado</rdf:li>
+     <rdf:li>lucrar</rdf:li>
+     <rdf:li>lucro</rdf:li>
+     <rdf:li>cambio</rdf:li>
+     <rdf:li>preço</rdf:li>
+     <rdf:li>ação</rdf:li>
+     <rdf:li>prever</rdf:li>
+     <rdf:li>previsão</rdf:li>
+     <rdf:li>recession</rdf:li>
+     <rdf:li>recessão</rdf:li>
+     <rdf:li>vendas</rdf:li>
+     <rdf:li>tender</rdf:li>
+     <rdf:li>tendência</rdf:li>
+     <rdf:li>progresso</rdf:li>
+     <rdf:li>estatística</rdf:li>
+     <rdf:li>bancarrota</rdf:li>
+     <rdf:li>falido</rdf:li>
+     <rdf:li>símbolo</rdf:li>
+     <rdf:li>crise</rdf:li>
+     <rdf:li>diminuição</rdf:li>
+     <rdf:li>abaixo</rdf:li>
+     <rdf:li>baixo</rdf:li>
+     <rdf:li>debaixo</rdf:li>
+     <rdf:li>juso</rdf:li>
+     <rdf:li>para baixo</rdf:li>
+     <rdf:li>crescer</rdf:li>
+     <rdf:li>acrescentar</rdf:li>
+     <rdf:li>aumentar</rdf:li>
+     <rdf:li>aumente</rdf:li>
+     <rdf:li>progredir</rdf:li>
+     <rdf:li>rapport</rdf:li>
+     <rdf:li>bem sucedido</rdf:li>
+     <rdf:li>acima</rdf:li>
+     <rdf:li>acima de</rdf:li>
+     <rdf:li>adiante</rdf:li>
+     <rdf:li>alto</rdf:li>
+     <rdf:li>até</rdf:li>
+     <rdf:li>cima</rdf:li>
+     <rdf:li>elevar</rdf:li>
+    </rdf:Bag>
+   </dc:subject>
+   <dc:creator>
+    <rdf:Seq>
+     <rdf:li>NMWstock</rdf:li>
+    </rdf:Seq>
+   </dc:creator>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+% &&end EPS XMP packet marker&&
+[/Document
+1 dict begin /Metadata {eps_metadata_stream} def
+currentdict end /BDC EPSHandler1_pdfmark
+[/NamespacePop EPSHandler1_pdfmark
+%%EndPageSetup
+
+
+%AI5_BeginLayer
+1 1 1 1 0 0 0 0 0 0 Lb
+(background) Ln
+
+ 
+%AI3_Note: rect1021
+ 0.901961 0.901961 0.901961 Xa 1.463159 w 0.000000 2250.000000 m 
+3000.000000 2250.000000 l 3000.000000 -0.000071 l 0.000000 -0.000071 l 
+0.000000 2250.000000 l f
+
+
+LB
+%AI5_EndLayer
+
+
+%AI5_BeginLayer
+1 1 1 1 0 0 1 0 0 0 Lb
+(design) Ln
+
+ 
+%AI3_Note: rect4684
+ 0.000000 0.607843 0.698039 Xa 7.499991 w 1 J 103.035564 2122.720780 m 
+181.827462 2122.720780 l 181.827462 116.557671 l 103.035564 116.557671 
+l 103.035564 2122.720780 l f
+
+
+ 
+%AI3_Note: rect4865
+ 0.000000 0.607843 0.698039 Xa 7.499991 w 1 J 218.192943 2022.715617 m 
+1421.284580 2022.715617 l 1421.284580 1874.223201 l 218.192943 
+1874.223201 l 218.192943 2022.715617 l f
+
+
+ 
+%AI3_Note: path4988
+ 0.000000 0.607843 0.698039 Xa 7.499991 w 1 J 218.192965 1691.183548 m 
+1563.716119 1691.183548 l 1563.716119 1542.691140 l 218.192965 
+1542.691140 l 218.192965 1691.183548 l f
+
+
+ 
+%AI3_Note: path4990
+ 0.000000 0.607843 0.698039 Xa 7.499991 w 1 J 218.192965 1359.651487 m 
+1766.756777 1359.651487 l 1766.756777 1211.159079 l 218.192965 
+1211.159079 l 218.192965 1359.651487 l f
+
+
+ 
+%AI3_Note: path4992
+ 0.000000 0.607843 0.698039 Xa 7.499991 w 1 J 218.192965 1028.119426 m 
+1987.980214 1028.119426 l 1987.980214 879.627018 l 218.192965 
+879.627018 l 218.192965 1028.119426 l f
+
+
+ 
+%AI3_Note: path4994
+ 0.000000 0.607843 0.698039 Xa 7.499991 w 1 J 218.192965 696.587394 m 
+2269.812771 696.587394 l 2269.812771 548.094986 l 218.192965 
+548.094986 l 218.192965 696.587394 l f
+
+
+ 
+%AI3_Note: path4996
+ 0.000000 0.607843 0.698039 Xa 7.499991 w 1 J 218.192965 365.055248 m 
+2488.005716 365.055248 l 2488.005716 216.562840 l 218.192965 
+216.562840 l 218.192965 365.055248 l f
+
+
+LB
+%AI5_EndLayer
+
+
+%%Trailer
+/currentdistillerparams where
+{pop currentdistillerparams /CoreDistVersion get 5000 lt} {true} ifelse
+{userdict /EPSHandler1_pdfmark /cleartomark load put}
+{ userdict /EPSHandler1_pdfmark /pdfmark load put} ifelse
+[/EMC EPSHandler1_pdfmark
+
+showpage
+count op_count sub {pop} repeat
+countdictstack dict_count sub {end} repeat
+tzung_eps_state restore
+end
+%%EOF
+

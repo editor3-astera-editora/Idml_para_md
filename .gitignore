@@ -46,18 +46,7 @@ coverage.xml
 .vscode/
 *.swp
 
-Output 
-Input
 FEITOS
-
-# Pipeline runtime
-Output/
-.idml2md_cache/
-_tmp_idml/
-_tmp_*/
-*=0.7
-*1.30
-*.github
 
 # Vendored binários externos
 vendor/

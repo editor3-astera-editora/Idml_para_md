@@ -6,7 +6,6 @@ from pathlib import Path
 
 from idml_to_md.batch import (
     BatchTask,
-    _rewrite_asset_paths,
     discover_books,
     filter_already_done,
 )
@@ -94,8 +93,10 @@ def test_filter_already_done_skips_existing_output(tmp_path: Path) -> None:
     book = _make_book(tmp_path / "Input", "Livro", ["x.idml"])
     task = BatchTask(book_dir=book, idml_path=book / "x.idml", slug="livro")
     output_dir = tmp_path / "Output"
-    output_dir.mkdir()
-    (output_dir / "livro.md").write_text("já existe")
+    # Sentinela: capitulo_1.md da unidade_1 — primeiro arquivo emitido pelo pipeline.
+    sentinel = output_dir / "livro" / "unidade_1" / "capitulo_1.md"
+    sentinel.parent.mkdir(parents=True)
+    sentinel.write_text("já existe")
 
     pending, skipped = filter_already_done(
         [task], output_dir, tmp_path / "FEITOS", tmp_path / "ERROS"
@@ -140,52 +141,7 @@ def test_filter_already_done_passes_through_new_books(tmp_path: Path) -> None:
     assert skipped == []
 
 
-# ---------------------------------------------------------------------------
-# _rewrite_asset_paths
-# ---------------------------------------------------------------------------
-
-
-def test_rewrite_asset_paths_replaces_markdown_image_links() -> None:
-    md = "![figura](assets/img/foo.jpg)\n\nOutra: ![](assets/vector/bar.svg)"
-    out = _rewrite_asset_paths(md, "meu-livro")
-    assert "](meu-livro_assets/img/foo.jpg)" in out
-    assert "](meu-livro_assets/vector/bar.svg)" in out
-    assert "](assets/" not in out
-
-
-def test_rewrite_asset_paths_replaces_html_src_double_quote() -> None:
-    md = '<img src="assets/eqs/eq001.png" alt="x">'
-    out = _rewrite_asset_paths(md, "abc")
-    assert 'src="abc_assets/eqs/eq001.png"' in out
-
-
-def test_rewrite_asset_paths_replaces_html_src_single_quote() -> None:
-    md = "<img src='assets/img/y.png'>"
-    out = _rewrite_asset_paths(md, "abc")
-    assert "src='abc_assets/img/y.png'" in out
-
-
-def test_rewrite_asset_paths_replaces_reference_links() -> None:
-    md = "[fig1]: assets/img/foo.jpg\n[fig2]: assets/vector/bar.svg"
-    out = _rewrite_asset_paths(md, "livro")
-    assert "[fig1]: livro_assets/img/foo.jpg" in out
-    assert "[fig2]: livro_assets/vector/bar.svg" in out
-
-
-def test_rewrite_asset_paths_leaves_plain_text_untouched() -> None:
-    # "assets/" no meio de texto comum, sem ser referência a path, fica
-    md = "O termo 'assets/' aparece literalmente aqui, mas não é um link."
-    out = _rewrite_asset_paths(md, "x")
-    assert out == md
-
-
-def test_rewrite_asset_paths_handles_multiple_occurrences() -> None:
-    md = (
-        "![a](assets/img/1.jpg)\n"
-        "![b](assets/img/2.jpg)\n"
-        "![c](assets/eqs/3.png)\n"
-    )
-    out = _rewrite_asset_paths(md, "livro")
-    assert out.count("livro_assets/") == 3
-    # nenhum ](assets/ remanescente — todas as 3 imagens foram reescritas
-    assert "](assets/" not in out
+# Os testes de ``_rewrite_asset_paths`` foram removidos: o pipeline novo emite
+# caminhos relativos (``../../assets/...``) já corretos para a estrutura final
+# ``Output/<slug>/unidade_<N>/capitulo_<M>.md``, então não há mais reescrita
+# por regex no batch worker.

@@ -188,8 +188,13 @@ def make_doc(**kwargs) -> Document:  # type: ignore[no-untyped-def]
 
 
 class TestRenderDocument:
+    # NOTA: o pipeline novo (split por capítulo) chama ``render_document`` com
+    # ``include_toc=False`` — sem título do livro, sem front matter, sem TOC e
+    # sem seção de Referências. Esses testes validam o modo "legado" com
+    # ``include_toc=True``, que continua suportado para ferramentas externas.
+
     def test_minimal(self) -> None:
-        out = render_document(make_doc())
+        out = render_document(make_doc(), include_toc=True)
         assert out.startswith("# Livro")
 
     def test_heading_and_paragraph(self) -> None:
@@ -211,7 +216,7 @@ class TestRenderDocument:
                 Heading(level=1, inlines=[text("Cap 2")]),
             ]
         )
-        out = render_document(doc)
+        out = render_document(doc, include_toc=True)
         assert "## Sumário" in out
         assert "[Cap 1](#cap-1)" in out
         assert "[Sec A](#sec-a)" in out
@@ -219,7 +224,7 @@ class TestRenderDocument:
 
     def test_references_section(self) -> None:
         doc = make_doc(references=[ReferenceEntry(inlines=[text("LIVRO, A. (2020).")])])
-        out = render_document(doc)
+        out = render_document(doc, include_toc=True)
         assert "## Referências" in out
         assert "LIVRO, A. (2020)." in out
 
@@ -252,12 +257,12 @@ class TestRenderDocument:
 
     def test_front_matter_authors_italic(self) -> None:
         doc = make_doc(front_matter=[FrontMatterBlock(role="authors", inlines=[text("Autor 1")])])
-        out = render_document(doc)
+        out = render_document(doc, include_toc=True)
         assert "*Autor 1*" in out
 
     def test_front_matter_title_bold(self) -> None:
         doc = make_doc(front_matter=[FrontMatterBlock(role="title", inlines=[text("Sub")])])
-        out = render_document(doc)
+        out = render_document(doc, include_toc=True)
         assert "**Sub**" in out
 
     def test_collapses_blank_lines(self) -> None:
