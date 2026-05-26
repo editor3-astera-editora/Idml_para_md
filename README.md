@@ -74,17 +74,7 @@ Indesign_exemplos/
 
 Se a pasta `Links/` estiver em outro lugar, use `--links <caminho>` na conversão.
 
-### Passo 2 — Inspecione os estilos do livro
-
-Antes de converter, descubra quais `ParagraphStyle` aparecem no IDML — útil para detectar estilos da coleção que precisam de overlay:
-
-```bash
-idml2md inspect "Indesign_exemplos/81_Matemática Financeira.idml" --top 30
-```
-
-Saída: tabela com cada estilo e quantas vezes foi usado.
-
-### Passo 3 — Converta
+### Passo 2 — Converta
 
 Comando mínimo:
 
@@ -104,7 +94,7 @@ idml2md convert "Indesign_exemplos/81_Matemática Financeira.idml" \
 
 Flags úteis: `-o/--output` (pasta-pai, default `out/`), `-c/--config` (overlay YAML), `-t/--title` (sobrescreve o título derivado do nome do arquivo), `--links` (pasta de assets se não for irmã), `-v/--verbose` (logs DEBUG).
 
-### Passo 4 — Verifique a saída
+### Passo 3 — Verifique a saída
 
 Para cada livro convertido:
 
@@ -120,7 +110,7 @@ out/<book_slug>/
 
 O `<book_slug>` é o nome do arquivo convertido para minúsculas/ASCII/hífens (ex.: `81_Matemática Financeira` → `81-matematica-financeira`).
 
-### Passo 5 — Audite via `_report.json`
+### Passo 4 — Audite via `_report.json`
 
 Campos mais úteis para revisão:
 
