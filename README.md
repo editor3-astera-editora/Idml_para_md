@@ -84,23 +84,7 @@ idml2md inspect "Indesign_exemplos/81_Matemática Financeira.idml" --top 30
 
 Saída: tabela com cada estilo e quantas vezes foi usado.
 
-### Passo 3 *(opcional)* — Crie um overlay YAML
-
-Se houver estilos novos ou se você quiser mapeamento diferente do default, crie `config/styles.<colecao>.yaml` com **apenas as diferenças** — o conversor faz deep-merge sobre `config/styles.default.yaml`:
-
-```yaml
-# config/styles.matematica.yaml
-paragraph_styles:
-  "MAT:Atividade":      { kind: admonition, variant: tip, title: "Atividade" }
-  "MAT:Dica do autor":  { kind: admonition, variant: note, title: "Dica" }
-
-character_styles:
-  "ênfase_forte":       { wrap: "**" }
-```
-
-Os valores válidos para `kind` são: `heading`, `paragraph`, `list`, `admonition`, `admonition_title`, `blockquote`, `code_block`, `caption`, `table`, `image`, `equation_display`, `front_matter`, `reference_entry`, `drop`, `passthrough`. Veja a referência completa em [`docs/configuration.md`](docs/configuration.md).
-
-### Passo 4 — Converta
+### Passo 3 — Converta
 
 Comando mínimo:
 
@@ -120,7 +104,7 @@ idml2md convert "Indesign_exemplos/81_Matemática Financeira.idml" \
 
 Flags úteis: `-o/--output` (pasta-pai, default `out/`), `-c/--config` (overlay YAML), `-t/--title` (sobrescreve o título derivado do nome do arquivo), `--links` (pasta de assets se não for irmã), `-v/--verbose` (logs DEBUG).
 
-### Passo 5 — Verifique a saída
+### Passo 4 — Verifique a saída
 
 Para cada livro convertido:
 
@@ -136,7 +120,7 @@ out/<book_slug>/
 
 O `<book_slug>` é o nome do arquivo convertido para minúsculas/ASCII/hífens (ex.: `81_Matemática Financeira` → `81-matematica-financeira`).
 
-### Passo 6 — Audite via `_report.json`
+### Passo 5 — Audite via `_report.json`
 
 Campos mais úteis para revisão:
 
