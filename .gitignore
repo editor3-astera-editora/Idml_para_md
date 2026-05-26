@@ -46,8 +46,12 @@ coverage.xml
 .vscode/
 *.swp
 
+Output 
+Input
+FEITOS
+
 # Pipeline runtime
-out/
+Output/
 .idml2md_cache/
 _tmp_idml/
 _tmp_*/
